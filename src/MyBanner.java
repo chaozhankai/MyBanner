@@ -7,8 +7,6 @@ public class MyBanner {
     private static String MYBANNER;
     public static void main(String[] args) {
         MYBANNER = "xiaozhankai.txt";
-        // 防止文件建立或读取失败，用catch捕捉错误并打印
-        // 带资源的try语句（try-with-resource）,自带关闭文件
         try(FileReader reader = new FileReader(MYBANNER);
             BufferedReader br = new BufferedReader(reader)) {
             String line;
