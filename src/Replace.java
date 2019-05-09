@@ -16,7 +16,12 @@ class Replace {
         return replaceMap;
     }
 
-    // 判断是否包含相应的符号
+
+    /**
+     *判断是否包含相应的符号并且替换
+     * @param line 传入的行
+     * @return line
+     */
     String replace(String line){
         for (Map.Entry<String,String> entry:Map().entrySet()){
             if (line.contains(entry.getKey())){
