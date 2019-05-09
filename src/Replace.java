@@ -18,7 +18,7 @@ class Replace {
 
 
     /**
-     *判断是否包含相应的符号并且替换
+     * 判断是否包含相应的符号并且替换
      * @param line 传入的行
      * @return line
      */
