@@ -4,9 +4,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class MyBanner {
-    private static String MYBANNER;
     public static void main(String[] args) {
-        MYBANNER = "xiaozhankai.txt";
+        String MYBANNER = "xiaozhankai.txt";
         try(FileReader reader = new FileReader(MYBANNER);
             BufferedReader br = new BufferedReader(reader)) {
             String line;
